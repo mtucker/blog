@@ -27,7 +27,7 @@ export default function Alert({ preview }) {
             <>
               The source code for this blog is{' '}
               <a
-                href={`https://github.com/mtucker/cms-contentful-app`}
+                href="https://github.com/mtucker/blog"
                 className="underline hover:text-success duration-200 transition-colors"
               >
                 available on GitHub
