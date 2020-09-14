@@ -15,7 +15,7 @@ module.exports = {
 };
 
 module.exports = withSourceMaps({
-  webpack(config, options) {
+  webpack(config) {
     return config;
   },
 });
