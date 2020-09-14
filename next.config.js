@@ -1,3 +1,5 @@
+const withSourceMaps = require('@zeit/next-source-maps')
+
 module.exports = {
     async redirects() {
         return [
@@ -7,3 +9,9 @@ module.exports = {
         ].filter(Boolean);
     },
   };
+
+  module.exports = withSourceMaps({
+    webpack(config, options) {
+      return config
+    }
+  });
