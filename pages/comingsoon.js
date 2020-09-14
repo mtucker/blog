@@ -1,6 +1,6 @@
-import Container from '../components/container'
-import Layout from '../components/layout'
-import Head from 'next/head'
+import Container from "../components/container";
+import Layout from "../components/layout";
+import Head from "next/head";
 
 export default function ComingSoon() {
   return (
@@ -17,5 +17,5 @@ export default function ComingSoon() {
         </Container>
       </Layout>
     </>
-  )
+  );
 }
