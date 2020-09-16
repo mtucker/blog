@@ -10,9 +10,7 @@ export default function ComingSoon() {
           <title>MattTucker</title>
         </Head>
         <Container>
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-            MattTucker
-          </h1>
+          <h1>MattTucker</h1>
           <h1>Coming soon</h1>
         </Container>
       </Layout>
