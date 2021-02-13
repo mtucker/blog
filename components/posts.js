@@ -3,7 +3,7 @@ import PostPreview from "./post-preview";
 export default function Posts({ posts }) {
   return (
     <section>
-      <div>
+      <div className="stack">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

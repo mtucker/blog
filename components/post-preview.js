@@ -4,14 +4,14 @@ import DateComponent from "../components/date";
 export default function PostPreview({ title, date, excerpt, slug }) {
   return (
     <div>
-      <div>
-        <DateComponent dateString={date} />
-      </div>
-      <h3>
+      <h1 className="font-size:big">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a>{title}</a>
         </Link>
-      </h3>
+        <div className="subhead">
+          <DateComponent dateString={date} />
+        </div>
+      </h1>
       <p>{excerpt}</p>
     </div>
   );
