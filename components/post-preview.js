@@ -4,7 +4,7 @@ import DateComponent from "../components/date";
 export default function PostPreview({ title, date, excerpt, slug }) {
   return (
     <div>
-      <h1 className="font-size:big">
+      <h1 className="font-size:biggish">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a>{title}</a>
         </Link>

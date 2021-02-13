@@ -1,6 +1,5 @@
 import Container from "../components/container";
 import Posts from "../components/posts";
-import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPostsForHome } from "../lib/api";
 import Head from "next/head";
@@ -14,7 +13,7 @@ export default function Index({ preview, allPosts }) {
           <title>{SITE_NAME}</title>
         </Head>
         <Container>
-          <Intro />
+          {/* <Intro /> */}
           {allPosts.length > 0 && <Posts posts={allPosts} />}
         </Container>
       </Layout>

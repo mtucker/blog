@@ -1,20 +1,16 @@
-import PostPreview from "./post-preview";
+import Link from "next/link";
 
 export default function MorePosts({ posts }) {
   return (
     <section>
-      <h2>More Posts</h2>
+      <h3>Other Posts</h3>
       <div>
         {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
+          <p key={post.slug}>
+            <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
+              <a>{post.title}</a>
+            </Link>
+          </p>
         ))}
       </div>
     </section>
