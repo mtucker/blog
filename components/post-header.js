@@ -10,9 +10,11 @@ export default function PostHeader({ title, coverImage, date }) {
           <DateComponent dateString={date} />
         </div>
       </h1>
-      <div>
-        <CoverImage title={title} url={coverImage.url} />
-      </div>
+      {coverImage && (
+        <div>
+          <CoverImage title={title} url={coverImage.url} />
+        </div>
+      )}
     </>
   );
 }
